@@ -9,10 +9,10 @@ You can visit the repo at:
 
 ## Built With
 
-- React
-- Styled Components
-- node.js
-- Netflify
+- React [https://reactjs.org/docs/getting-started.html]
+- Styled Components [https://styled-components.com/]
+- node.js [https://nodejs.org/en/docs/]
+- Netflify [https://www.netlify.com/]
 
 ## Usage
 
