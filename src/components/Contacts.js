@@ -34,7 +34,7 @@ const SearchArea = styled.div`
     padding: 10px;
 `;
 
-export const SearchContainer = styled.div`
+const SearchContainer = styled.div`
     display: flex;
     flex-direction: row;
     background: white;
@@ -79,7 +79,14 @@ const ContactName= styled.span`
 `;
 
 const MessageText = styled.span`
-    width: 20%;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 3px;
+    color: rgba (0,0,0,0.8);
+`;
+
+const MessageTime = styled.span`
+    width: 30%;
     font-size: 14px;
     margin-top: 3px;
     color: rgba (0,0,0,0.8);
@@ -99,28 +106,28 @@ const ContactComponent =(props) => {
             <ProfileIcon src={userData.profilePic}/>
             <ContactInfo>
                 <ContactName>{userData.name}</ContactName>
-                <MessageText>Hello</MessageText>
+                <MessageText>{userData.lastText}</MessageText>
             </ContactInfo>
-            <MessageText>10:04 PM</MessageText>
+            <MessageTime>{userData.lastTextTime}</MessageTime>
         </ContactItem>
     );
 };
 
 function Contacts() {
     return <Container>
-        <ProfileDiv>
-            <ProfileImage src="/profile/profpic.png"/>
-        </ProfileDiv>
-        <SearchArea>
-            <searchContainer>
-                <SearchIcon src={"search-icon.svg"}/>
-                <SearchInput placeholder="Search or start new chat"/>
-            </searchContainer>
-        </SearchArea>
-        {contactList.map((userData) => (
-            <ContactComponent userData={userData}/>
-        ))}
-        </Container>;
+                <ProfileDiv>
+                    <ProfileImage src="/profile/profpic.png"/>
+                </ProfileDiv>
+                <SearchArea>
+                    <SearchContainer>
+                        <SearchIcon src={"search-icon.svg"}/>
+                        <SearchInput placeholder="Search or start new chat"/>
+                    </SearchContainer>
+                </SearchArea>
+                {contactList.map((userData) => (
+                    <ContactComponent userData={userData}/>
+                ))}
+           </Container>;
 };
 
 export default Contacts;
