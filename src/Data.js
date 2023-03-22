@@ -80,14 +80,14 @@ export const contactList = [
       addedOn: "12:00 PM",
     },
     {
-      id: 2,
+      id: 4,
       messageType: "TEXT",
       text: "Not much, you?",
       senderID: 1,
       addedOn: "12:01 PM",
     },
     {
-      id: 3,
+      id: 1,
       messageType: "TEXT",
       text: "Good good, about to go to the football, you coming?",
       senderID: 0,
@@ -101,14 +101,14 @@ export const contactList = [
       addedOn: "12:04 PM",
     },
     {
-      id: 5,
+      id: 1,
       messageType: "TEXT",
       text: "Great 😁",
       senderID: 0,
       addedOn: "12:10 PM",
     },
     {
-      id: 5,
+      id: 4,
       messageType: "TEXT",
       text: "See you soon! 🍻🍻",
       senderID: 1,

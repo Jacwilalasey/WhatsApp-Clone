@@ -34,7 +34,7 @@ const SearchArea = styled.div`
     padding: 10px;
 `;
 
-const SearchContainer = styled.div`
+export const SearchContainer = styled.div`
     display: flex;
     flex-direction: row;
     background: white;
@@ -44,9 +44,9 @@ const SearchContainer = styled.div`
 `;
 
 const SearchIcon = styled.img`
-    width: 28px;
-    height: 28px;
-    padding-left: 10px;
+    width: 27px;
+    height: 27px;
+    padding-left: 10px;     
 `;
 
 export const SearchInput = styled.input`
