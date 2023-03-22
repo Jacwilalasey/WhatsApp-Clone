@@ -49,7 +49,7 @@ const SearchIcon = styled.img`
     padding-left: 10px;
 `;
 
-export const SearchInput =styled.input`
+export const SearchInput = styled.input`
     width: 100%;
     outline: none;
     border: none;

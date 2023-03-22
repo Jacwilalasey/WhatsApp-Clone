@@ -11,10 +11,12 @@ const Container = styled.div`
 `
 
 function App() {
-  return <Container>
-    <Contacts/>
-    <Chats/>
-  </Container>
+  return (
+    <Container>
+      <Contacts/>
+      <Chats/>
+    </Container>
+  );
 }
 
 export default App;
